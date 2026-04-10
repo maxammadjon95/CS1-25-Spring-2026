@@ -20,7 +20,7 @@ def compute_lps(pattern):
 
 def kmp_search(text, pattern):
     lps = compute_lps(pattern)
-
+    print("LPS = ", lps)
     i = 0  # index for text
     j = 0  # index for pattern
 
@@ -45,6 +45,5 @@ if __name__ == "__main__":
 
     print("Text:    ", text)
     print("Pattern: ", pattern)
-    print("\nSearching...\n")
 
     kmp_search(text, pattern)
